@@ -10,8 +10,6 @@ const config = new Configuration({
 const openai = new OpenAIApi(config);
 
 export async function POST(req: Request) {
-  console.log("here");
-
   const { text } = await req.json();
   const messages: any[] = [
     {
